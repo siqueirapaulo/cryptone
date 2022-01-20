@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>CryptONE</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <h1 id="title">Crypt<span>ONE</span></h1>
+                <img src="images/key.png" alt="key">
+            </header>
+
+            <div id="content">
+                <div id="original-area">
+                    <h3>Mensagem original</h3>
+                    <textarea id="original-message" placeholder="Digite sua mensagem aqui..."></textarea>
+                    <button id="crypt-button">Criptografar</button>
+                    <button id="decrypt-button">Descriptografar</button>
+                </div>
+    
+                <div id="crypt-area">
+                    <h3>Mensagem resultante</h3>
+                    <textarea id="result" disabled></textarea>
+                    <div id="crypt-extra">
+                        <button id="copy-button">Copiar</button>
+                        <p id="error-message"></p>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <p>Desenvolvido por Paulo Siqueira | Projeto ONE - Alura/Oracle | 2022</p>
+            </footer>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
