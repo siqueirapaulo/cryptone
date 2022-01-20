@@ -50,7 +50,7 @@ cryptButton.onclick = function() {
 
     if (error) {
         resultMessage.innerHTML = "";
-        errorMessage.innerHTML = "<img id='warn-icon' src='images/warn.png'> Não foi possível criptografar. A mensagem deve possuir somente letras minúsculas e sem acento.";
+        errorMessage.innerHTML = "<img id='warn-icon' src='images/warn.png'><p>Não foi possível criptografar. A mensagem deve possuir somente letras minúsculas e sem acento.</p>";
     } else {
         resultMessage.innerHTML = crypted;
         errorMessage.innerHTML = "";
@@ -142,7 +142,7 @@ decryptButton.onclick = function() {
     }
 
     if (error) {
-        errorMessage.innerHTML = "<img id='warn-icon' src='images/warn.png'> Não foi possível descriptografar. A mensagem não está criptografada corretamente.";
+        errorMessage.innerHTML = "<img id='warn-icon' src='images/warn.png'><p>Não foi possível descriptografar. A mensagem não está criptografada corretamente.</p>";
         resultMessage.innerHTML = "";
         error = false;
     } else {

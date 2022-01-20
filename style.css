@@ -118,13 +118,20 @@ button:active, button:hover {
 }
 
 #error-message {
-    font-size: 16px;
-    font-weight: 700;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 #warn-icon {
-    width: 18px;
-    height: 18px;
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+}
+
+#error-message p{
+    font-size: 14px;
+    font-weight: 700;
 }
 
 footer {
