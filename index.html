@@ -13,8 +13,17 @@
     <body>
         <div id="container">
             <header>
-                <h1 id="title">Crypt<span>ONE</span></h1>
-                <img src="images/key.png" alt="key">
+                <div id="logo">
+                    <h1 id="title">Crypt<span>ONE</span></h1>
+                    <img src="images/key.png" alt="key">
+                </div>
+                <!--
+                <div id="dark-mode">
+                    <div id="dark-mode-text">Modo Escuro</div>
+                    <input type="checkbox" id="switch-shadow" class="switch switch--shadow">
+                    <label for="switch-shadow"></label>
+                </div>
+                -->
             </header>
 
             <div id="content">
@@ -30,7 +39,7 @@
                     <textarea id="result" disabled></textarea>
                     <div id="crypt-extra">
                         <button id="copy-button">Copiar</button>
-                        <div id="error-message"></div>
+                        <div id="warn-message"></div>
                     </div>
                 </div>
             </div>
