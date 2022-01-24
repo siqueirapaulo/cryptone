@@ -9,6 +9,12 @@ var cryptButton = document.querySelector("#crypt-button");
 var decryptButton = document.querySelector("#decrypt-button");
 var copyButton = document.querySelector("#copy-button");
 
+// VARIÁVEIS PARA DARK MODE ===================================================
+
+var checkbox = document.querySelector("#switch-shadow");
+var bodyTag = document.querySelector("body");
+var footerTag = document.querySelector("footer");
+
 // FUNÇÃO DE CRIPTOGRAFIA
 
 cryptButton.onclick = function() {
@@ -90,4 +96,26 @@ copyButton.onclick = function() {
     setTimeout(function() {
         warnMessage.innerHTML = "";
     }, 5000)
+}
+
+// DARK MODE ==================================================================
+
+checkbox.onclick = function() {
+    if (checkbox.checked) {
+        bodyTag.classList.add("dark-bg");
+        originalTextarea.classList.add("gray-bg");
+        footerTag.classList.add("darker-bg");
+        cryptButton.classList.add("dark-button");
+        decryptButton.classList.add("dark-button");
+        copyButton.classList.add("dark-button");
+        resultTextarea.classList.add("white-text");
+    } else {
+        bodyTag.classList.remove("dark-bg");
+        originalTextarea.classList.remove("gray-bg");
+        footerTag.classList.remove("darker-bg");
+        cryptButton.classList.remove("dark-button");
+        decryptButton.classList.remove("dark-button");
+        copyButton.classList.remove("dark-button");
+        resultTextarea.classList.remove("white-text");
+    }
 }

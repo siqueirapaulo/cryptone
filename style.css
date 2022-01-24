@@ -214,10 +214,31 @@ footer {
     color: #FFF;
 }
 
-/*body {
-    height: 100vh;
+.darker-bg {
+    background: rgba(0, 0, 0, .6);
+    color: #FFF;
+}
+
+.dark-bg {
     background: #333;
     color: #FFF;
-    font-family: "Comfortaa", sans-serif;
-    font-weight: 400;
-}*/
+}
+
+.gray-bg {
+    background: #555;
+    color: #FFF;
+}
+
+.gray-bg::placeholder {
+    color: #CCC;
+}
+
+.white-text {
+    color: #FFF;
+}
+
+.dark-button {
+    background: #333;
+    border: 1px solid #FFF;
+    color: #FFF;
+}
